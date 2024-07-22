@@ -1,25 +1,205 @@
-<html>
-    <head>
-        <title>GYMRATS</title>
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">COSAS DE GYMRATS</a></h1>
-        </div>
 
-        <div>
-            <p>COCHILOKO QUIERE A LA CARGA PESADA :/</p>
-            <h2><a href="">VENTAJAS</a></h2>
-            <p>1.Tienen mas fuerza</p>
-        </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarnitasReu COCHILOKO - Catálogo de Productos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #5a6e82;
+        }
 
-        <div>
-            <p>2.Saben lo que quieren</p>
-            <h2><a href="">DESVENTAJAS</a></h2>
-            <p>1.Dolores musculares </p>
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">CarnitasReu COCHILOKO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Catálogo para el volumen <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
         </div>
-        <div>
-            <p>2.Sueño</p>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Producto 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwB2GcR05LByM7qGjpup_bG5XZfn1JUikuMNvJug8HL5wZJ7NgTwRbOqykRZ9l5JmapyA&usqp=CAU" class="img-thumbnail" alt="Carne de Res">
+                    <div class="card-body">
+                        <h5 class="card-title">Carne de Res</h5>
+                        <p class="card-text">Precio: $10</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal1">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://www.unisabana.edu.co/fileadmin/_processed_/6/4/csm_beneficios_carne_de_cerdo_unisabana_e61a5008b0.jpg" class="img-thumbnail" alt="Carne de Cerdo">
+                    <div class="card-body">
+                        <h5 class="card-title">Carne de Cerdo</h5>
+                        <p class="card-text">Precio: $8</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal2">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://micocacola.vtexassets.com/arquivos/ids/198446-800-auto?v=638448243051200000&width=800&height=auto&aspect=true" class="img-thumbnail" alt="Bebida Energética">
+                    <div class="card-body">
+                        <h5 class="card-title">Bebida Energética</h5>
+                        <p class="card-text">Precio: $2</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal3">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 4 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://d1cft8rz0k7w99.cloudfront.net/n/e/2/1/f/e21f140345b64ffe4db2a18b1f299d86e942567c_Beverages_459143_01.jpg" class="img-thumbnail" alt="Jugo de Naranja">
+                    <div class="card-body">
+                        <h5 class="card-title">Jugo de Naranja</h5>
+                        <p class="card-text">Precio: $3</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal4">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </body>
+    </div>
+
+    <!-- Modal de Detalles del Producto 1 -->
+    <div class="modal fade" id="productModal1" tabindex="-1" role="dialog" aria-labelledby="productModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel1">Carne de Res</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwB2GcR05LByM7qGjpup_bG5XZfn1JUikuMNvJug8HL5wZJ7NgTwRbOqykRZ9l5JmapyA&usqp=CAU" class="img-fluid" alt="Carne de Res">
+                        </div>
+                        <div class="col-md-6">
+                            <h1>Carne de Res</h1>
+                            <p>Precio: $10</p>
+                            <p>Descripción: Deliciosa carne de res de alta calidad.</p>
+                            <button class="btn btn-primary">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Detalles del Producto 2 -->
+    <div class="modal fade" id="productModal2" tabindex="-1" role="dialog" aria-labelledby="productModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel2">Carne de Cerdo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://www.unisabana.edu.co/fileadmin/_processed_/6/4/csm_beneficios_carne_de_cerdo_unisabana_e61a5008b0.jpg" class="img-fluid" alt="Carne de Cerdo">
+                        </div>
+                        <div class="col-md-6">
+                            <h1>Carne de Cerdo</h1>
+                            <p>Precio: $8</p>
+                            <p>Descripción: Carne de cerdo fresca y sabrosa.</p>
+                            <button class="btn btn-primary">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Detalles del Producto 3 -->
+    <div class="modal fade" id="productModal3" tabindex="-1" role="dialog" aria-labelledby="productModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel3">Bebida Energética</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://micocacola.vtexassets.com/arquivos/ids/198446-800-auto?v=638448243051200000&width=800&height=auto&aspect=true" class="img-fluid" alt="Bebida Energética">
+                        </div>
+                        <div class="col-md-6">
+                            <h1>Bebida Energética</h1>
+                            <p>Precio: $2</p>
+                            <p>Descripción: Bebida energética para recargar energías.</p>
+                            <button class="btn btn-primary">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Detalles del Producto 4 -->
+    <div class="modal fade" id="productModal4" tabindex="-1" role="dialog" aria-labelledby="productModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel4">Jugo de Naranja</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://d1cft8rz0k7w99.cloudfront.net/n/e/2/1/f/e21f140345b64ffe4db2a18b1f299d86e942567c_Beverages_459143_01.jpg" class="img-fluid" alt="Jugo de Naranja">
+                        </div>
+                        <div class="col-md-6">
+                            <h1>Jugo de Naranja</h1>
+                            <p>Precio: $3</p>
+                            <p>Descripción: Refrescante jugo de naranja natural.</p>
+                            <button class="btn btn-primary">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
