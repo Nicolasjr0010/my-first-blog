@@ -24,6 +24,15 @@
         .card-text {
             font-size: 16px;
         }
+
+        .nav-pills .nav-link {
+            border-radius: 0;
+        }
+
+        .nav-link.active {
+            background-color: #007bff;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -35,10 +44,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Computadoras <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Consolas</a>
+                    <a class="nav-link" href="#">Catálogo de Productos <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
@@ -46,137 +52,183 @@
 
     <div class="container mt-5">
         <div class="row">
-            <!-- Computadoras -->
-            <div class="col-md-12">
-                <h2>Computadoras</h2>
-                <div class="row">
-                    <!-- Producto 1 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4">
-                            <img src="https://media.gq.com.mx/photos/61e70ca25def32c5619cef06/16:9/w_1280,c_limit/Lenovo%20Yoga%20Slim%207%20Pro.jpg" class="img-thumbnail" alt="Laptop">
-                            <div class="card-body">
-                                <h5 class="card-title">Lenovo Yoga Slim 7 Pro</h5>
-                                <p class="card-text">Precio: $1200</p>
-                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal1">Ver detalles</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Producto 2 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4">
-                            <img src="https://eyub.com.gt/wp-content/uploads/2020/11/Computadora-de-Escritorio.jpg" class="img-thumbnail" alt="Computadora de Escritorio">
-                            <div class="card-body">
-                                <h5 class="card-title">Computadora de Escritorio</h5>
-                                <p class="card-text">Precio: $1500</p>
-                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal2">Ver detalles</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Productos adicionales -->
-                    <!-- Asegúrate de reemplazar las URLs y descripciones con las imágenes y detalles correspondientes -->
-                    <!-- Ejemplo de Producto 3 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4">
-                            <img src="https://example.com/another-computer.jpg" class="img-thumbnail" alt="Otra Computadora">
-                            <div class="card-body">
-                                <h5 class="card-title">Otra Computadora</h5>
-                                <p class="card-text">Precio: $1300</p>
-                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal3">Ver detalles</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Agregar 12 productos más siguiendo el mismo formato -->
-                </div>
+            <div class="col-md-3">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="computadoras-tab" data-toggle="pill" href="#computadoras">Computadoras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="consolas-tab" data-toggle="pill" href="#consolas">Consolas</a>
+                    </li>
+                </ul>
             </div>
+            <div class="col-md-9">
+                <div class="tab-content">
+                    <!-- Módulo Computadoras -->
+                    <div id="computadoras" class="tab-pane fade show active">
+                        <div class="row">
+                            <!-- Laptop Gaming -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="https://www.itsitio.com/wp-content/uploads/2020/07/G531-1-780x405.jpg" class="img-thumbnail" alt="Laptop Gaming">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Laptop Gaming</h5>
+                                        <p class="card-text">Precio: $1200</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal1">Ver detalles</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- PC de Juegos -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="https://rymportatiles.com.pe/cdn/shop/files/NITROAN515-58-57VS7732.png?v=1711227953&width=1214" class="img-thumbnail" alt="PC de Juegos">
+                                    <div class="card-body">
+                                        <h5 class="card-title">PC de Juegos</h5>
+                                        <p class="card-text">Precio: $1500</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal2">Ver detalles</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Laptop de Alto Rendimiento -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzuCnW2ISYi-xpVOHeAoFf-moxzBxE37o8_g&s" class="img-thumbnail" alt="Laptop de Alto Rendimiento">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Laptop de Alto Rendimiento</h5>
+                                        <p class="card-text">Precio: $1800</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal3">Ver detalles</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- PC All-in-One -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="https://homeofficecanella.com.gt/wp-content/uploads/2022/03/1V4G2LT-400x400.jpg" class="img-thumbnail" alt="PC All-in-One">
+                                    <div class="card-body">
+                                        <h5 class="card-title">PC All-in-One</h5>
+                                        <p class="card-text">Precio: $1000</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal4">Ver detalles</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Laptop 2 en 1 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="https://imgmedia.larepublica.pe/1200x630/larepublica/original/2022/07/11/62cc3ceefc75c16205366e03.jpg" class="img-thumbnail" alt="Laptop 2 en 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Laptop 2 en 1</h5>
+                                        <p class="card-text">Precio: $1100</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal5">Ver detalles</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Laptop Ultraligera -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="https://cdn.pacifiko.com/image/cache/catalog/p/YThlMzVkNm_204-484x484.jpg" class="img-thumbnail" alt="Laptop Ultraligera">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Laptop Ultraligera</h5>
+                                        <p class="card-text">Precio: $1300</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal6">Ver detalles</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Productos Adicionales -->
+                            <!-- Agregar 5 productos adicionales aquí -->
+                        </div>
+                    </div>
 
-            <!-- Consolas -->
-            <div class="col-md-12 mt-5">
-                <h2>Consolas</h2>
-                <div class="row">
-                    <!-- Producto 1 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4">
-                            <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/13467108/3937553486.jpg" class="img-thumbnail" alt="Consola de Videojuegos">
-                            <div class="card-body">
-                                <h5 class="card-title">Consola de Videojuegos</h5>
-                                <p class="card-text">Precio: $500</p>
-                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal4">Ver detalles</a>
+                    <!-- Módulo Consolas -->
+                    <div id="consolas" class="tab-pane fade">
+                        <div class="row">
+                            <!-- Consola de Videojuegos -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/13467108/3937553486.jpg" class="img-thumbnail" alt="Consola de Videojuegos">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Consola de Videojuegos</h5>
+                                        <p class="card-text">Precio: $500</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal7">Ver detalles</a>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- Equipo Gaming -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAB1fqaKRTKMNRlp0NsDcjEAxxUTZjwkIJfg&s" class="img-thumbnail" alt="Equipo Gaming">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Equipo Gaming</h5>
+                                        <p class="card-text">Precio: $300</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal8">Ver detalles</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Gadgets Electrónicos -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2018/11/50-regalos-tecnologicos-menos-50-euros.jpg" class="img-thumbnail" alt="Gadgets Electrónicos">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Gadgets Electrónicos</h5>
+                                        <p class="card-text">Precio: $150</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal9">Ver detalles</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Consola Nintendo -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="https://walmartgt.vtexassets.com/arquivos/ids/524307-800-450?v=638502825717400000&width=800&height=450&aspect=true" class="img-thumbnail" alt="Consola Nintendo">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Consola Nintendo</h5>
+                                        <p class="card-text">Precio: $400</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal10">Ver detalles</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Consola PlayStation -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="https://images.techhive.com/images/idge/imported/image_for_id_198431_1592379486.png" class="img-thumbnail" alt="Consola PlayStation">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Consola PlayStation</h5>
+                                        <p class="card-text">Precio: $450</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal11">Ver detalles</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Productos Adicionales -->
+                            <!-- Agregar 5 productos adicionales aquí -->
                         </div>
                     </div>
-                    <!-- Productos adicionales -->
-                    <!-- Asegúrate de reemplazar las URLs y descripciones con las imágenes y detalles correspondientes -->
-                    <!-- Ejemplo de Producto 2 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4">
-                            <img src="https://example.com/another-console.jpg" class="img-thumbnail" alt="Otra Consola">
-                            <div class="card-body">
-                                <h5 class="card-title">Otra Consola</h5>
-                                <p class="card-text">Precio: $450</p>
-                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productModal5">Ver detalles</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Agregar 14 productos más siguiendo el mismo formato -->
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal de Detalles del Producto 1 (Computadoras) -->
+    <!-- Modales de Producto (Ejemplo) -->
     <div class="modal fade" id="productModal1" tabindex="-1" role="dialog" aria-labelledby="productModalLabel1" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="productModalLabel1">Lenovo Yoga Slim 7 Pro</h5>
+                    <h5 class="modal-title" id="productModalLabel1">Laptop Gaming</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="https://media.gq.com.mx/photos/61e70ca25def32c5619cef06/16:9/w_1280,c_limit/Lenovo%20Yoga%20Slim%207%20Pro.jpg" class="img-fluid" alt="Lenovo Yoga Slim 7 Pro">
-                        </div>
-                        <div class="col-md-6">
-                            <h1>Lenovo Yoga Slim 7 Pro</h1>
-                            <p>Precio: $1200</p>
-                            <p>Descripción: Potente laptop con las últimas características para satisfacer todas tus necesidades tecnológicas.</p>
-                            <button class="btn btn-primary">Agregar al carrito</button>
-                        </div>
-                    </div>
+                    Detalles del producto Laptop Gaming.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Añadir más modales de productos aquí -->
 
-    <!-- Modal de Detalles del Producto 2 (Computadoras) -->
-    <div class="modal fade" id="productModal2" tabindex="-1" role="dialog" aria-labelledby="productModalLabel2" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="productModalLabel2">Computadora de Escritorio</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="https://eyub.com.gt/wp-content/uploads/2020/11/Computadora-de-Escritorio.jpg" class="img-fluid" alt="Computadora de Escritorio">
-                        </div>
-                        <div class="col-md-6">
-                            <h1>Computadora de Escritorio</h1>
-                            <p>Precio: $1500</p>
-                            <p>Descripción: Computadora de escritorio potente para juegos y trabajo intensivo.</p>
-                            <button class="btn btn-primary">Agregar al carrito</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
 
-    <!-- Modal de Detalles del Producto 4 (Consolas) -->
-    <div class="modal fade" id="productModal4" tabindex="-1" role="dialog" aria-labelledby="productModalLabel4" aria-hidden="true">
-        <div class="modal-dialog
